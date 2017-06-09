@@ -150,6 +150,8 @@ body {
   padding-right: 1rem;
   margin-left: 1.2rem;
   justify-content: center;
+  width: 70%;
+  height: auto;
 }
 
 .banner .banner-mobile-img {
@@ -161,14 +163,17 @@ body {
   flex-shrink: 1;
   flex-direction: column;
   justify-content: center;
-  width: 100%;
+  width: 30%;
+  height: auto;
   padding-left: 3rem;
 }
 
 .banner-info .learn {
   color: white;
-  margin-top: 12rem;
+}
 
+.banner-img img {
+  width: 100%;
 }
 
 .learn h1{
@@ -190,11 +195,9 @@ body {
   padding-bottom: .6rem;
   text-align: center;
   background-color: #47628B;
-  margin-bottom: 12rem;
   margin-right: 8rem;
   color: white;
   text-decoration: none;
-  border: 1px solid black;
 }
 
 .banner-info a {
@@ -229,23 +232,29 @@ body {
   }
 
   .banner .banner-info {
+    justify-content: center;
     margin-right: 0rem;
+    width: 100%;
   }
 
   .banner-info .learn {
     margin-top: 0rem;
     text-align: center;
+    margin-right: 4rem;
   }
 
   .banner-info .lorem {
     text-align: center;
+    margin-right: 6rem;
   }
 
   .banner-info .start {
     text-align: center;
-    margin-left: 1rem;
-    margin-right: 1rem;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
+    margin-right: 0rem;
+    margin-left: 0.5rem;
+    width:75%;
+
   }
 }
 
@@ -262,6 +271,7 @@ body {
   display: flex;
   flex-direction:column;
   height: auto;
+  width: 60%;
 }
 
 .information .right {
@@ -270,13 +280,20 @@ body {
   border-left: 1px solid #6C87AF;
   justify-content: center;
   height: auto;
+  width: 40%;
 }
 
 .left .left-image {
+  width: 90%;
   flex-shrink: 3;
   padding-top: 2.5rem;
   padding-left: 1.3rem;
   padding-right: 2rem;
+}
+
+.left-image img {
+  width: 100%;
+  height: auto;
 }
 
 .practicing h2 {
@@ -397,7 +414,7 @@ body {
   }
 
   .information .right {
-    border: none;
+    width: 100%;
   }
 
   .information .left {
@@ -508,6 +525,7 @@ body {
 }
 
 .learning-boxes .top-row {
+  width: 100%;
   display: flex;
   justify-content: space-around;
   margin-bottom: 1.5rem;
@@ -518,6 +536,7 @@ body {
   background-color: white;
   margin-left: 7rem;
   height: 19rem;
+  border:1px solid black;
 }
 
 .top-row .top-left:hover {
@@ -533,6 +552,7 @@ body {
   width: 18.8rem;
   background-color: white;
   height: 19rem;
+  border:1px solid black;
 }
 
 .top-row .top-mid:hover {
@@ -551,6 +571,7 @@ body {
   background-color: white;
   margin-right: 7rem;
   height: 19rem;
+  border:1px solid black;
 }
 
 .top-row .top-right:hover {
@@ -629,6 +650,10 @@ body {
   display: none;
 }
 
+.mobile-learning2 {
+  display: none;
+}
+
 @media only screen and (max-width: 700px) {
   .learning {
     display: flex;
@@ -673,13 +698,88 @@ body {
   }
 }
 
+@media only screen and (max-width: 1050px) {
+  .learning .mobile-learning {
+    display: none;
+  }
+
+  .learning .learning-boxes {
+    display: none;
+  }
+
+  .learning {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .learning .mobile-learning2 {
+    display: block;
+  }
+
+  .mobile-learning2 .top-row-mobile {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    border-bottom: 1px solid #284268;
+  }
+
+  .top-row-mobile .top-left-mobile {
+    width: 18.7rem;
+  }
+
+  .top-row-mobile .top-right-mobile {
+    width: 18.7rem;
+  }
+
+  .mobile-learning2 .middle-row-mobile {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    border-bottom: 1px solid #284268;
+    margin-top: 1rem;
+  }
+
+  .middle-row-mobile .middle-left-mobile {
+    width: 18.7rem;
+  }
+
+  .middle-row-mobile .middle-right-mobile {
+    width: 18.7rem;
+  }
+
+  .mobile-learning2 .bottom-row-mobile {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    border-bottom: 1px solid #284268;
+    margin-top: 1rem;
+  }
+
+  .bottom-row-mobile .bottom-left-mobile {
+    width: 18.7rem;
+  }
+
+  .bottom-row-mobile .bottom-right-mobile {
+
+    width: 18.7rem;
+  }
+
+  .mobile-learning2 a {
+    text-decoration: none;
+    color: black;
+  }
+
+  .mobile-learning2 h3 {
+    color: #284268;
+  }
+}
 /* Thesis exhibit */
 
 .thesis {
   display: flex;
   flex-direction: column;
   width: 100%;
-  height: 630px;
+  height: auto;
   background-color: #284268
 }
 
@@ -703,6 +803,8 @@ body {
 
 .video video {
   margin-bottom: 0rem;
+  width:100%;
+  height: auto;
 }
 
 .thesis-left .video-info {
@@ -817,6 +919,9 @@ body {
 
 }
 
+@media only screen and (max-width:940px) {
+
+}
 
 /* footer */
 
