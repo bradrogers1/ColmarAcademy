@@ -678,12 +678,17 @@ body {
     color: black;
     font-size: 2rem;
   }
+
   .learning .learning-boxes {
     display: none;
   }
 
-  .mobile-learning {
+  .learning .mobile-learning {
     display:block;
+  }
+
+  .learning .mobile-learning2 {
+    display: none;
   }
 
   .mobile {
@@ -709,7 +714,7 @@ body {
   }
 }
 
-@media only screen and (max-width: 1050px) {
+@media only screen and (max-width: 1050px) and (min-width: 700px){
 
   .learning .mobile-learning {
     display: none;
@@ -772,7 +777,6 @@ body {
   }
 
   .bottom-row-mobile .bottom-right-mobile {
-
     width: 18.7rem;
   }
 
